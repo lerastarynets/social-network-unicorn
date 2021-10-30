@@ -1,0 +1,2 @@
+(this["webpackJsonpapp-example"]=this["webpackJsonpapp-example"]||[]).push([[7],{299:function(t,e,p){},303:function(t,e,p){"use strict";p.r(e);p(299);var c=p(1);e.default=function(){return Object(c.jsx)("div",{children:Object(c.jsx)("div",{children:Object(c.jsx)("img",{height:"400px",src:"https://fakty.com.ua/wp-content/uploads/2016/08/15/fakty_img_400_300.jpg"})})})}}}]);
+//# sourceMappingURL=7.05db1b83.chunk.js.map

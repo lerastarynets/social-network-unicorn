@@ -1,0 +1,51 @@
+aside {
+  background-color: #2b2b2b;
+  color: white;
+  width: 170px;
+  list-style-type: none;
+  padding: 20px;
+  border: 2px solid #ff007a;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.item {
+  margin-bottom: 7px;
+  font-size: 20px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  color: #ff007a;
+}
+.asideFriends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.asideFriendsHeading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.asideFriendsItems {
+  width: 170px;
+  display: flex;
+  justify-content: space-around;
+}
+.asideFriendsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+.asideFriendsAva img {
+  width: 40px;
+  border-radius: 50%;
+}

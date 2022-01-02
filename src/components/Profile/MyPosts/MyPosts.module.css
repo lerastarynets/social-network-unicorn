@@ -1,0 +1,9 @@
+.active {
+  color: gold;
+}
+.item img {
+  width: 50px;
+}
+.posts {
+  padding: 10px;
+}

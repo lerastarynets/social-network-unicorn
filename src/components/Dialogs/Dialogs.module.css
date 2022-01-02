@@ -1,0 +1,26 @@
+.dialogs {
+  display: flex;
+  justify-content: space-around;
+}
+.dialogsItems,
+.dialogsMessages {
+  padding: 10px;
+  color: white;
+}
+.dialogsItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.dialogs .active {
+  color: #ff007a;
+}
+.item img {
+  width: 30px;
+  border-radius: 50%;
+}

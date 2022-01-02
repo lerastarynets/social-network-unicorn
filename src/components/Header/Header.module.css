@@ -1,0 +1,17 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90px;
+  background: #2b2b2b;
+  color: white;
+  width: 100%;
+  border: 2px solid #ff007a;
+}
+.headerImg {
+  width: 50px;
+  height: 50px;
+}
+.loginBlock {
+  float: right;
+}

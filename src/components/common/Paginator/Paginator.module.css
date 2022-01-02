@@ -1,0 +1,36 @@
+.paginator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.paginationItem {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.paginationItem:last-of-type {
+  margin-right: 20px;
+}
+.paginationItem:first-of-type {
+  margin-left: 20px;
+}
+.paginationItem:hover {
+  opacity: 0.5;
+}
+.selectedItem {
+  border-radius: 5px;
+  border: solid white;
+}
+.paginationButton {
+  cursor: pointer;
+  height: 30px;
+  background-color: #ff007a;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}

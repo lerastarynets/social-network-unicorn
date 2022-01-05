@@ -1,0 +1,2 @@
+(this["webpackJsonpapp-example"]=this["webpackJsonpapp-example"]||[]).push([[5],{298:function(i,e,t){},302:function(i,e,t){"use strict";t.r(e);t(298);var p=t(1);e.default=function(){return Object(p.jsx)("div",{children:Object(p.jsx)("div",{children:Object(p.jsx)("img",{height:"400px",src:"https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2lmdHxlbnwwfHwwfHw%3D&w=1000&q=80"})})})}}}]);
+//# sourceMappingURL=5.5639b77e.chunk.js.map

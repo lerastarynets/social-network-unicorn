@@ -1,2 +1,0 @@
-(this["webpackJsonpapp-example"]=this["webpackJsonpapp-example"]||[]).push([[8],{298:function(e,t,c){},302:function(e,t,c){"use strict";c.r(t);c(298);var i=c(1);t.default=function(){return Object(i.jsx)("div",{children:Object(i.jsx)("div",{children:Object(i.jsx)("img",{height:"400px",src:"https://miro.medium.com/max/4320/1*JktzC9GrA_l4yz0cCy8a5Q.jpeg"})})})}}}]);
-//# sourceMappingURL=8.6dde3f65.chunk.js.map

@@ -26,7 +26,7 @@ const News = React.lazy(() => import("./components/News/News"));
 
 class App extends Component {
   catchAllUnhendeldErrors = (promiseRejectionEvent) => {
-    alert("some huynya happend");
+    alert("something bad happend");
     //console.log(promiseRejectionEvent)
   };
   componentDidMount() {

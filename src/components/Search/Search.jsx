@@ -1,7 +1,3 @@
-import s from "./Search.module.css";
-import { NavLink } from "react-router-dom";
-import userPhoto from "../../assets/img/user.png";
-import { followUsers, unfollowUsers } from "../../api/api";
 import Paginator from "../common/Paginator/Paginator";
 import User from "./User";
 

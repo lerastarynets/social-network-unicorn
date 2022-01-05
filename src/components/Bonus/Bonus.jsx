@@ -1,15 +1,15 @@
-import s from './Bonus.module.css';
+import s from "./Bonus.module.css";
 
 const Bonus = () => {
-    return (
-        <div>
-            <div>
-            <img
-              height="400px"
-              src="https://cdn77-pic.xvideos-cdn.com/videos/thumbs169poster/42/75/41/427541ab90a78cdff1f7b12c89f797c0/427541ab90a78cdff1f7b12c89f797c0.6.jpg"
-            />
-          </div>
-        </div>
-    );
-}
-export default Bonus
+  return (
+    <div>
+      <div>
+        <img
+          height="400px"
+          src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2lmdHxlbnwwfHwwfHw%3D&w=1000&q=80"
+        />
+      </div>
+    </div>
+  );
+};
+export default Bonus;

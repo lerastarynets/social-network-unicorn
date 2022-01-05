@@ -1,10 +1,8 @@
 import {
-  followUser,
   setCurrentPage,
   setTotalUsersCount,
   setUsers,
   toggleIsFetching,
-  unfollowUser,
   toggleFollowingInProgress,
   getUsersThunkCreator,
   followUsersThunkCreator,
@@ -25,8 +23,6 @@ import {
   getTotalUsersCount,
   getUsers,
   getUsersInProgress,
-  getUsersSuper,
-  getUsersSuperSelector,
 } from "../../redux/search-selectors";
 
 class SearchAPIComponent extends React.Component {

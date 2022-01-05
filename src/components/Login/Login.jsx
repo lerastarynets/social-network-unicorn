@@ -1,14 +1,9 @@
 import s from "../common/FormsControls/FormsControls.module.css";
 import { connect } from "react-redux";
 import { reduxForm } from "redux-form";
-import { Field } from "redux-form";
 import { createField, Input } from "../common/FormsControls/FormsControls";
 import { requiredFields } from "../../utils/validators/validator";
-import {
-  logInThunkCreator,
-  logOutThunkCreator,
-} from "../../redux/auth-reducer";
-import { logIn } from "../../api/api";
+import { logInThunkCreator } from "../../redux/auth-reducer";
 import { Redirect } from "react-router-dom";
 
 const LoginForm = ({ handleSubmit, error, captchaUrl }) => {
@@ -51,7 +46,7 @@ const Login = (props) => {
   }
   return (
     <div>
-      <h1>SIGN IN, U SON OF A BITCH</h1>
+      <h1>SIGN IN, PLEASE</h1>
       <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl} />
     </div>
   );

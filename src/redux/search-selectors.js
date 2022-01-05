@@ -10,13 +10,13 @@ export const getUsers = (state) => {
 //   return users.filter((u) => true);
 // });
 
-export const getUsersSuperSelector = createSelector(
-  getUsers,
-  getIsFetching,
-  (users, isFetching) => {
-    return users.filter((u) => true);
-  }
-);
+// export const getUsersSuperSelector = createSelector(
+//   getUsers,
+//   getIsFetching,
+//   (users, isFetching) => {
+//     return users.filter((u) => true);
+//   }
+// );
 
 export const getPageSize = (state) => {
   return state.searchReducer.pageSize;

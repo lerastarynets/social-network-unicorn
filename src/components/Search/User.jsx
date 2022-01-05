@@ -1,7 +1,6 @@
 import s from "./Search.module.css";
 import { NavLink } from "react-router-dom";
 import userPhoto from "../../assets/img/user.png";
-import Paginator from "../common/Paginator/Paginator";
 
 let User = ({ user, usersInProgress, follow, unfollow }) => {
   let u = user;

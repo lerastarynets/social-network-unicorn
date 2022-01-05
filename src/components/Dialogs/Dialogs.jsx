@@ -14,7 +14,7 @@ const DialogTextarea = (props) => {
       <div>
         <Field
           component={Textarea}
-          placeholder={"write, u"}
+          placeholder={"write something"}
           name={"dialogTextarea"}
           validate={[requiredFields]}
         ></Field>
@@ -39,6 +39,7 @@ const Dialogs = (props) => {
 
   let onSendMessage = (values) => {
     props.sendMessage(values.dialogTextarea);
+    values.dialogTextarea = "";
   };
   if (!props.isAuth) {
     return <Redirect to={"/login"} />;

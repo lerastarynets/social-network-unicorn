@@ -9,3 +9,14 @@
   border: red 2px solid;
   color: red;
 }
+.formInfoBtn {
+  cursor: pointer;
+  height: 24px;
+  padding: 2px 4px 2px 4px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: black;
+  border: 2px solid #ff007a;
+  font-weight: bold;
+  color: #ff007a;
+}

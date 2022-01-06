@@ -25,7 +25,7 @@ const ProfileInfo = ({
   };
   const onSubmit = (formData) => {
     saveProfileThunkCreator(formData);
-    //deactivateEditMode();
+    deactivateEditMode();
   };
   const onPhotoSelected = (e) => {
     if (e.target.files.length) {
@@ -35,27 +35,42 @@ const ProfileInfo = ({
   return (
     <div>
       <div className={s.description}>
-        <img
-          className={s.profilePhoto}
-          src={profile.photos.large || userPhoto}
-        />
-        {owner && <input type={"file"} onChange={onPhotoSelected} />}
-        <ProfileStatusWithHooks
-          updateStatus={updateUserStatusThunkCreator}
-          status={status}
-        />
+        <div className={s.descriptionItem}>
+          <img
+            className={s.profilePhoto}
+            src={profile.photos.large || userPhoto}
+          />
+        </div>
+        {owner && (
+          <div className={s.descriptionItem}>
+            <label htmlFor="uploadBtn" className={s.profileInfoBtn}>
+              Change Photo
+            </label>
+            <input id={"uploadBtn"} type={"file"} onChange={onPhotoSelected} />
+          </div>
+        )}
+        <div className={s.descriptionItem}>
+          <ProfileStatusWithHooks
+            updateStatus={updateUserStatusThunkCreator}
+            status={status}
+          />
+        </div>
         {editMode ? (
-          <ProfileDataForm
-            initialValues={profile}
-            onSubmit={onSubmit}
-            profile={profile}
-          />
+          <div className={s.descriptionItem}>
+            <ProfileDataForm
+              initialValues={profile}
+              onSubmit={onSubmit}
+              profile={profile}
+            />
+          </div>
         ) : (
-          <ProfileData
-            profile={profile}
-            owner={owner}
-            activateEditMode={activateEditMode}
-          />
+          <div className={s.descriptionItem}>
+            <ProfileData
+              profile={profile}
+              owner={owner}
+              activateEditMode={activateEditMode}
+            />
+          </div>
         )}
       </div>
     </div>
@@ -65,7 +80,11 @@ const ProfileInfo = ({
 const ProfileData = ({ profile, owner, activateEditMode }) => {
   return (
     <div>
-      {owner && <button onClick={activateEditMode}>Edit profile</button>}
+      {owner && (
+        <button className={s.profileInfoBtn} onClick={activateEditMode}>
+          Edit profile
+        </button>
+      )}
       <div>{profile.fullName}</div>
       <div>{profile.aboutMe}</div>
       <div>Looking for a job: {profile.lookingForAJob ? "Yes" : "No"}</div>

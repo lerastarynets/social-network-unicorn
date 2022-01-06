@@ -1,6 +1,25 @@
 .description {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
+}
+.descriptionItem:not(:last-child) {
+  margin-bottom: 15px;
 }
 .profilePhoto {
   height: 200px;
+}
+input[type="file"] {
+  display: none;
+}
+.profileInfoBtn {
+  cursor: pointer;
+  height: 20px;
+  padding: 2px 4px 2px 4px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ff007a;
+  border: none;
 }

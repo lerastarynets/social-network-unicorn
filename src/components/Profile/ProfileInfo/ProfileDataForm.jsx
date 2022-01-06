@@ -4,13 +4,12 @@ import {
   Textarea,
 } from "../../common/FormsControls/FormsControls";
 import s from "../../common/FormsControls/FormsControls.module.css";
-import { Contact } from "./ProfileInfo";
 import { reduxForm } from "redux-form";
 
 const ProfileDataForm = ({ handleSubmit, profile, error }) => {
   return (
     <form onSubmit={handleSubmit}>
-      <button>Save</button>
+      <button className={s.formInfoBtn}>Save</button>
       <div>{createField("text", "Full name", "fullName", [], Input)}</div>
       <div>{createField("text", "About me", "aboutMe", [], Input)}</div>
       <div>
@@ -29,13 +28,15 @@ const ProfileDataForm = ({ handleSubmit, profile, error }) => {
       </div>
       <div>Contacts: </div>
       {error && <div className={s.formSummaryError}>{error}</div>}
-      {Object.keys(profile.contacts).map((key) => {
-        return (
-          <div>
-            {key}: {createField("text", key, "contacts." + key, [], Input)}
-          </div>
-        );
-      })}
+      <ul>
+        {Object.keys(profile.contacts).map((key) => {
+          return (
+            <li>
+              {key}: {createField("text", key, "contacts." + key, [], Input)}
+            </li>
+          );
+        })}
+      </ul>
     </form>
   );
 };

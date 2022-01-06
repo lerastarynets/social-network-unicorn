@@ -1,4 +1,27 @@
+.userItem {
+  margin-bottom: 10px;
+}
+.userPaginator {
+  margin-bottom: 20px;
+}
 .userImg {
   width: 30px;
   border-radius: 50%;
+}
+.userBtnF,
+.userBtnU {
+  cursor: pointer;
+  height: 25px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.userBtnF {
+  background-color: #ff007a;
+  border: none;
+}
+.userBtnU {
+  background-color: black;
+  border: 2px solid #ff007a;
+  font-weight: bold;
+  color: #ff007a;
 }

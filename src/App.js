@@ -52,7 +52,7 @@ class App extends Component {
             <Switch>
               <Route
                 exact
-                path="/"
+                path="/social-network-unicorn"
                 render={() => {
                   return <Redirect to={"/profile"} />;
                 }}
@@ -62,7 +62,7 @@ class App extends Component {
                 path="/profile/:userId?"
                 render={() => {
                   return (
-                    <Suspense fallback={<div>Zagruzhayus, blyat</div>}>
+                    <Suspense fallback={<div>Wait...</div>}>
                       <ProfileContainer />
                     </Suspense>
                   );
@@ -72,7 +72,7 @@ class App extends Component {
                 path="/dialogs"
                 render={() => {
                   return (
-                    <Suspense fallback={<div>Zagruzhayus, blyat</div>}>
+                    <Suspense fallback={<div>Wait...</div>}>
                       <DialogsContainer />
                     </Suspense>
                   );
@@ -82,7 +82,7 @@ class App extends Component {
                 path="/news"
                 render={() => {
                   return (
-                    <Suspense fallback={<div>Zagruzhayus, blyat</div>}>
+                    <Suspense fallback={<div>Wait...</div>}>
                       <News />
                     </Suspense>
                   );
@@ -92,7 +92,7 @@ class App extends Component {
                 path="/settings"
                 render={() => {
                   return (
-                    <Suspense fallback={<div>Zagruzhayus, blyat</div>}>
+                    <Suspense fallback={<div>Wait...</div>}>
                       <Settings />
                     </Suspense>
                   );
@@ -102,7 +102,7 @@ class App extends Component {
                 path="/search"
                 render={() => {
                   return (
-                    <Suspense fallback={<div>Zagruzhayus, blyat</div>}>
+                    <Suspense fallback={<div>Wait...</div>}>
                       <SearchContainer />
                     </Suspense>
                   );
@@ -112,7 +112,7 @@ class App extends Component {
                 path="/bonus"
                 render={() => {
                   return (
-                    <Suspense fallback={<div>Zagruzhayus, blyat</div>}>
+                    <Suspense fallback={<div>Wait...</div>}>
                       <Bonus />
                     </Suspense>
                   );

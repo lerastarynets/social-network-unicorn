@@ -41,7 +41,7 @@ const Aside = () => {
         <div className={s.asideFriendsItems}>
           <div>
             <NavLink
-              to="/nahuy"
+              to="/julie"
               className={s.asideFriendsItem}
               activeClassName={s.active}
             >
@@ -53,7 +53,7 @@ const Aside = () => {
           </div>
           <div>
             <NavLink
-              to="/nahu"
+              to="/mila"
               className={s.asideFriendsItem}
               activeClassName={s.active}
             >
@@ -65,7 +65,7 @@ const Aside = () => {
           </div>
           <div>
             <NavLink
-              to="/ahuy"
+              to="/alla"
               className={s.asideFriendsItem}
               activeClassName={s.active}
             >

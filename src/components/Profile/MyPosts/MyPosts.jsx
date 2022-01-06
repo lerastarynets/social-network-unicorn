@@ -18,6 +18,7 @@ const PostTextarea = (props) => {
     <form onSubmit={props.handleSubmit}>
       <div>
         <Field
+          placeholder={"write a post"}
           validate={[requiredFields, maxLength50]}
           component={Textarea}
           name={"postTextarea"}

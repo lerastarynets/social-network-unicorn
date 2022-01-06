@@ -8,7 +8,6 @@ import {
   requiredFields,
 } from "../../../utils/validators/validator";
 import { Textarea } from "../../common/FormsControls/FormsControls";
-import { render } from "react-dom";
 import { PureComponent } from "react";
 
 const maxLength50 = maxLengthThunkCreator(50);
@@ -24,8 +23,7 @@ const PostTextarea = (props) => {
           name={"postTextarea"}
         ></Field>
       </div>
-      <button>Add post</button>
-      <button>Remove</button>
+      <button className={s.postBtn}>Add post</button>
     </form>
   );
 };
@@ -47,10 +45,11 @@ class MyPosts extends PureComponent {
     });
     let onAddPost = (values) => {
       this.props.addPost(values.postTextarea);
+      values.postTextarea = "";
     };
     return (
       <div className={s.posts}>
-        my posts
+        <p className={s.postsTitle}>My posts</p>
         <PostReduxTextarea onSubmit={onAddPost} />
         <div>{postsElements}</div>
       </div>

@@ -7,3 +7,20 @@
 .posts {
   padding: 10px;
 }
+.postsTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.postBtn {
+  cursor: pointer;
+  height: 20px;
+  padding: 2px 4px 2px 4px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ff007a;
+  border: none;
+  margin-bottom: 15px;
+}

@@ -1,11 +1,8 @@
-import { followUser, setCurrentPage, setTotalUsersCount, setUsers, toggleIsFetching, unfollowUser, toggleFollowingInProgress,getUsersThunkCreator, followUsersThunkCreator, unfollowUsersThunkCreator} from "../../redux/search-reducer"
+import { setCurrentPage, setTotalUsersCount, setUsers, toggleIsFetching, toggleFollowingInProgress,getUsersThunkCreator, followUsersThunkCreator, unfollowUsersThunkCreator} from "../../redux/search-reducer"
 import { connect } from 'react-redux';
 import React from 'react';
 import Search from './Search';
 import Preloader from "../common/Preloader/Preloader";
-import { getUsers } from "../../api/api";
-
-
 
 class SearchAPIComponent extends React.Component {
   
@@ -56,28 +53,7 @@ let mapStateToProps = (state) => {
     usersInProgress:  state.searchReducer.usersInProgress,
   }
 }
-// let mapDispatchToProps = (dispatch) => {
-//   return {
-//     followUser: (userId) => {
-//       dispatch(followUser(userId))
-//     },
-//     unfollowUser: (userId) => {
-//       dispatch(unfollowUser(userId))
-//       },
-//     setUsers:(users) => {
-//       dispatch(setUsers(users))
-//     },
-//     setCurrentPage: (currentPage) => {
-//       dispatch(setCurrentPage(currentPage))
-//     },
-//     setTotalUsersCount: (totalUsersCount) => {
-//       dispatch(setTotalUsersCount(totalUsersCount))
-//     },
-//     toggleIsFetching: (isFetching) => {
-//       dispatch(toggleIsFetching(isFetching))
-//     },
-//   }
-// }
+
 const SearchContainer = connect(mapStateToProps,
  {
     setUsers,

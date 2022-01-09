@@ -2,7 +2,7 @@
 
 ## Live application URL
 
-The project is availableon the following link: [https://lerastarynets.github.io/social-network-unicorn/](https://lerastarynets.github.io/social-network-unicorn/).
+The project is available on the following link: [https://lerastarynets.github.io/social-network-unicorn/](https://lerastarynets.github.io/social-network-unicorn/).
 
 ## Technologies
 
